@@ -1,18 +1,19 @@
-
 .feauture-list-main {
-    
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         width: 50%;
-    // width: 100%;  
-    // justify-content: space-between;
+        width: 100%;  
+        justify-content: space-between;
+        background-color: tomato;
+    }
 }
-    
+
 .section-list {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        background-color: tomato;
     }
     
 }
@@ -28,6 +29,3 @@
     text-align: center;
 }
   
-.section-list-features {
-    // justify-content:space-between;
-}
