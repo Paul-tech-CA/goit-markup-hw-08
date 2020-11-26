@@ -1,0 +1,114 @@
+
+.adress p{
+    color: $background-color-header;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.footer-contacts{
+    flex-direction: column;
+   display: flex; 
+}
+
+.footer-logo{
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.footer-adress{
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-mail{
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-tel{
+    display: block;
+}
+
+.footer {
+    background-color: $background-color-footer;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-studio-footer {
+    color: $background-color-header;
+    }
+
+.adress .footer-adress-contacts {
+    color: $footer-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+}
+
+.contacts .footer-adress-contacts {
+    color: $primary-text-color;
+}
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-center{
+    margin-left: 70px;
+
+    & li:last-child .link-icon-footer{
+    margin-right: 0;
+}
+}
+
+
+
+.footer-losung{
+    color: $background-color-header;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.link-icon-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+   background-color: $accent-color;
+
+        &.link-icon-picture-footer,
+        &.link-icon-picture-footer {
+        fill: $background-color-header;
+        }
+    }
+}
+
+.link-icon-picture-footer{
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    fill: $background-color-header;
+    background-repeat: no-repeat;
+    background-position: center;
+}

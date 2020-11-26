@@ -1,0 +1,76 @@
+.section-list-text {
+    color: $primary-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section .team {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+.team-list{
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+.section .section-list-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
+.team-list-tab{
+    justify-content: space-between;
+}
+
+.section-list-name {
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+.team{
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-list-name, .team{
+    text-align: center;
+}
+
+.list-name-profession{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.section-list-picture {
+    background-color: $background-color-header;
+}
+
+.background {
+    background-color: $background-color-primary;
+}
+
+.team-list-tab .section-list-picture:not(:nth-child(4)){
+    margin-bottom: 30px;
+}   
