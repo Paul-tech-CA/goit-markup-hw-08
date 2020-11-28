@@ -8,17 +8,32 @@
     }
 }
 
-// .hero{
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
+.hero{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+    padding-bottom: 60px;
+        
+    }
+}
 
 .filter{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 
-    & .filter-item + .filter-item{
-    margin-left: 8px;
+    & :not(:last-child){
+    margin-right: 8px;
+}
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: start;
+
+        & .filter-item {
+           margin-bottom: 15px;
+        }
+    
     }
 }

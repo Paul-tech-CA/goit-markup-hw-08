@@ -301,7 +301,6 @@ img {
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .hero-title {
@@ -462,7 +461,6 @@ img {
     margin-bottom: 8px;
   }
   .actions {
-    margin-top: 20px;
     margin-bottom: 60px;
   }
 }
@@ -479,6 +477,26 @@ img {
   .footer-center {
     text-align: center;
     margin: 0;
+  }
+  .form-footer-sing {
+    display: inline-block;
+  }
+  .form-footer {
+    display: flex;
+    text-align: center;
+  }
+  .footer-adress {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .footer-mail {
+    margin-bottom: 8px;
+  }
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+  .footer-contacts :not(:last-child) {
+    margin-bottom: 8px;
   }
 }
 
@@ -565,16 +583,19 @@ img {
 }
 
 .form-input-footer {
-  width: 1600px;
-  height: 252px;
+  padding-left: 16px;
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-left: 93px;
-  margin-bottom: 0;
-  margin-right: 12px;
-  padding-left: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input-footer {
+    margin-left: 93px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -621,7 +642,7 @@ img {
 @media screen and (max-width: 1199px) {
   .form-field-footer input {
     width: 450px;
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
 }
 

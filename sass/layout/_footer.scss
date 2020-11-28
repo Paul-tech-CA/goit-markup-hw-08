@@ -65,7 +65,7 @@
      }
 
      .actions {
-         margin-top: 20px;
+        //  margin-top: 20px;
          margin-bottom: 60px;
      }
 }
@@ -82,9 +82,54 @@
 
     .footer-center{
         text-align: center;
-        // margin: 0;
+        margin: 0;
+    }
 
-           
+    .form-footer-sing{
+        display: inline-block;
+    }
+
+    .form-footer{
+        display: flex;
+        text-align: center;
+    }
+
+    // .botton-footer-form{
+    //     margin: 0 auto;
+    // }
+    .footer-adress{
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .footer-mail{
+        margin-bottom: 8px;
+    }
+
+    .footer-contacts{
+        & :not(:last-child){
+            margin-bottom: 8px;
+        }
+        margin-bottom: 60px;
+    }
+
+}
+
+
+
+
+
+    // .footer-contacts{
+    //     & :not(:last-child){
+    //         margin-bottom: 8px;
+    //     }
+    //     margin-bottom: 60px;
+    // }
+
+
+    // .actions{
+    //     margin-top: 20px;
+    // }           
 
 
 @media screen and (min-width: 1200px) {
