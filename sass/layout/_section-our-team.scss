@@ -30,13 +30,6 @@
 
 }
 
-.team-list-tab{
-    justify-content: space-between;
-    @media screen and (min-width: 1200px) {
-        margin: -15px;  
-    }
-}
-
 .section-list-name {
    margin-top: 0;
    margin-bottom: 10px;
@@ -54,6 +47,11 @@
 .section-team {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px){ 
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section-list-name, .team{
@@ -67,26 +65,36 @@
     padding-right: 32px;
 }
 
+.team-list-tab{
+    // justify-content: space-between;
+
+    
+    @media screen and (min-width: 768px) {
+        margin: -15px;  
+    }
+}
+
 .section-list-picture {
     background-color: $background-color-header;
+    width: 100%;
+    margin: 15px;
     
-    &:not(:last-child){
-        @media screen and (max-width: 767px) {
-        margin-bottom: 30px;  
-        }
-    }
-
-    &:not(:last-child){
-        @media screen and (max-width: 1199px) {
-            width: calc((100% - 2*15px) / 2);
+        @media screen and (min-width: 768px) {
+        width: calc((100% - 2*30px) / 2);
+        margin: 15px;  
+        } 
+        
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 4*30px) / 4);
             margin: 15px;  
         }
+      
 }
 
 .background {
     background-color: $background-color-primary;
 }
 
-.team-list-tab .section-list-picture:not(:nth-child(4)){
-    margin-bottom: 30px;
-}   
+// .team-list-tab .section-list-picture:not(:nth-child(4)){
+//     margin-bottom: 30px;
+// }   
