@@ -46,10 +46,21 @@
     fill: $background-color-header;
 }
 }
+
+
 .site-nav li {
 
-        display: inline-block;
+   display: inline-block;
 
+}
+
+.site-nav{
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
  

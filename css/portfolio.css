@@ -122,6 +122,13 @@ img {
   display: inline-block;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .site-nav-link {
   position: relative;
 }
@@ -297,17 +304,18 @@ img {
   margin: 0;
 }
 
-.adress p {
-  color: #FFFFFF;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  font-style: normal;
+.footer {
+  background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-contacts {
-  flex-direction: column;
-  display: flex;
+.footer-center {
+  margin-left: 70px;
+}
+
+.footer-center li:last-child .link-icon-footer {
+  margin-right: 0;
 }
 
 .footer-logo {
@@ -316,24 +324,85 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-adress {
-  margin-top: 0;
-  margin-bottom: 9px;
+.adress p {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
 
-.footer-mail {
-  display: block;
-  margin-bottom: 9px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-left-part {
+    text-align: center;
+  }
+  .footer-center {
+    text-align: center;
+    margin: 0;
+  }
+  .form-footer-sing {
+    display: inline-block;
+  }
+  .form-footer {
+    text-align: center;
+  }
+  .botton-footer-form {
+    margin: 0 auto;
+  }
+  .footer-adress {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .footer-mail {
+    margin-bottom: 8px;
+  }
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+  .footer-contacts :not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .actions {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
 }
 
-.footer-tel {
-  display: block;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-left-part {
+    text-align: center;
+  }
+  .footer-center {
+    text-align: center;
+    margin: 0;
+  }
 }
 
-.footer {
-  background-color: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    flex-direction: column;
+    display: flex;
+  }
+  .footer-adress {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+  .footer-mail {
+    display: block;
+    margin-bottom: 9px;
+  }
+  .footer-tel {
+    display: block;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo-studio-footer {
@@ -353,27 +422,19 @@ img {
   color: #757575;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-center {
-  margin-left: 70px;
-}
-
-.footer-center li:last-child .link-icon-footer {
-  margin-right: 0;
-}
-
 .footer-losung {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
   display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-losung {
+    margin-bottom: 20px;
+  }
 }
 
 .link-icon-footer {
@@ -384,7 +445,6 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-right: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -604,8 +664,10 @@ body {
   padding-left: 16px;
 }
 
-.form-footer-sing {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .form-footer-sing {
+    display: flex;
+  }
 }
 
 .button-footer-form {
@@ -627,6 +689,12 @@ body {
   padding-left: 29px;
 }
 
+@media screen and (max-width: 1199px) {
+  .button-footer-form {
+    margin: 0 auto;
+  }
+}
+
 .form-field-footer input {
   width: 370px;
   height: 50px;
@@ -637,12 +705,21 @@ body {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 1199px) {
+  .form-field-footer input {
+    width: 450px;
+    margin: 20px 0;
+  }
+}
+
 .icon-footer-send {
   display: inline-block;
   margin-left: 10px;
 }
 
-.form-footer b {
-  margin-left: 93px;
+@media screen and (min-width: 1200px) {
+  .form-footer b {
+    margin-left: 93px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
