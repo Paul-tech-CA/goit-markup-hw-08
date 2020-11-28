@@ -118,6 +118,10 @@ img {
   fill: #FFFFFF;
 }
 
+.site-nav li {
+  display: inline-block;
+}
+
 .site-nav-link {
   position: relative;
 }
@@ -128,6 +132,7 @@ img {
   content: "";
   width: 100%;
   height: 4px;
+  left: 0;
   bottom: 0;
   background: #2196F3;
   border-radius: 2px;
@@ -303,6 +308,13 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .container.hero-section-con {
   text-align: center;
 }
@@ -313,10 +325,48 @@ img {
   margin-right: auto;
   margin-left: auto;
   background-color: #C4C4C4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background_hero/bg_picture.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-bacground-picture {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_tel.jpg");
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-bacground-picture {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_tel_@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-bacground-picture {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-bacground-picture {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_tablet_@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-bacground-picture {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_desctop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-bacground-picture {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_desctop@2x.jpg");
+  }
 }
 
 .hero-section {

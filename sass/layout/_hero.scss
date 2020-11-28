@@ -7,6 +7,16 @@
     margin-top: 0;
     margin-bottom: 30px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px){ 
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
+
+
+
+
 }
 // width: 360px;
 // height: 84px;
@@ -24,15 +34,105 @@
     margin-right: auto;
     margin-left: auto;
     background-color: #C4C4C4;
-    background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-        url("../images/background_hero/bg_picture.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-        
 }
+
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        .hero-bacground-picture{
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+                url("../images/hero/Header_tel.jpg");
+        }
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx){
+            .hero-bacground-picture {
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+                url("../images/hero/Header_tel_@2x.jpg");
+            }   
+        }
+    }
+    
+
+    @media screen and (min-width: 768px) {
+        .hero-bacground-picture{
+            max-width: 768px;
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+                url("../images/hero/Header_tablet.jpg");
+        }
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx){
+            .hero-bacground-picture {
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+                url("../images/hero/Header_tablet_@2x.jpg");
+            }   
+        }
+}    
+
+
+    @media screen and (min-width: 1200px) {
+        .hero-bacground-picture{
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+            url("../images/hero/Header_desctop.jpg");
+        }
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+        .hero-bacground-picture {
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+            url("../images/hero/Header_desctop@2x.jpg");
+        }   
+     }
+}
+
+
+
+   
+
+
+
+
+
+    //     background-image: linear-gradient(to right,
+    //     rgba(47, 48, 58, 0.4),
+    //     rgba(47, 48, 58, 0.4)),
+    //     url("../images/hero/Header_tel-min.jpg");
+    // }
+    
+
+    
+
+
+
+
+
+   
+
+    // @media screen and (min-width: 320px) and (max-width: 767px) {
+    //     height: 400px;
+    // }
+ 
+
+
+        
+
 
 .hero-section{
     padding-top: 118px;

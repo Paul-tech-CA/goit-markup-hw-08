@@ -46,7 +46,11 @@
     fill: $background-color-header;
 }
 }
+.site-nav li {
 
+        display: inline-block;
+
+}
 
  
 
@@ -60,7 +64,7 @@
     content: "";
     width: 100%;
     height: 4px;
-    // left: 0;
+    left: 0;
     bottom: 0;
 
     background: $accent-color;
