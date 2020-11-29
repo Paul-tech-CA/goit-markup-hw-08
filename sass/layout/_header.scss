@@ -1,6 +1,6 @@
 .menu-container{
    
-    padding: 20px;
+    // padding: 20px;
     text-align: center;
         
     @media screen and (max-width: 767px) {
@@ -34,8 +34,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
 
+    // .nav{
+    //     padding: 20px 0;
+    // }
         .menu-container{
-            padding: 35px 0;
+            // padding: 35px 0;
             display: flex;
                     
     }
@@ -49,13 +52,14 @@
     }
        
     .studio .current::after{
-        bottom: -8px;
+        bottom: -37px;
     }
     .portfolio .current::after{
-        bottom: -8px;
+        bottom: -37px;
     }
     .site-nav{
         margin-left: 60px;
+        margin-top: 20px;
     }
     // .nav-list-header{
     //     margin-left: 80px;
@@ -64,6 +68,10 @@
 }
 
 @media screen and (min-width: 1199px) and (max-width: 1600px){
+
+    .logo {
+        padding: 9px 0;
+    }
 
     .contacts{
         display: flex;
@@ -74,7 +82,7 @@
     }
 
     .menu-container{
-        padding: 35px 0;
+        // padding: 35px 0;
         display: flex;                
     }
 
@@ -87,12 +95,15 @@
     }
 
     .studio .current::after{
-        bottom: -37px;
+        bottom: -33px;
     }
     .portfolio .current::after{
-        bottom: -37px;
+        bottom: -33px;
     }
 
+    .site-nav{
+        margin-bottom: 0;
+    }
 }
 
 
@@ -127,7 +138,7 @@
 
 .menu-container{
    
-    padding: 20px;
+    // padding: 20px;
     text-align: center;
         
     @media screen and (max-width: 767px) {

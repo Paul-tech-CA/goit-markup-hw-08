@@ -178,7 +178,6 @@ img {
 }
 
 .menu-container {
-  padding: 20px;
   text-align: center;
 }
 
@@ -211,7 +210,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-container {
-    padding: 35px 0;
     display: flex;
   }
   .link-icon-envelope, .link-icon-phone {
@@ -222,17 +220,21 @@ img {
     margin-bottom: 10px;
   }
   .studio .current::after {
-    bottom: -8px;
+    bottom: -37px;
   }
   .portfolio .current::after {
-    bottom: -8px;
+    bottom: -37px;
   }
   .site-nav {
     margin-left: 60px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1199px) and (max-width: 1600px) {
+  .logo {
+    padding: 9px 0;
+  }
   .contacts {
     display: flex;
   }
@@ -240,7 +242,6 @@ img {
     margin-right: 30px;
   }
   .menu-container {
-    padding: 35px 0;
     display: flex;
   }
   .link-icon-envelope, .link-icon-phone {
@@ -250,10 +251,13 @@ img {
     margin-left: 93px;
   }
   .studio .current::after {
-    bottom: -37px;
+    bottom: -33px;
   }
   .portfolio .current::after {
-    bottom: -37px;
+    bottom: -33px;
+  }
+  .site-nav {
+    margin-bottom: 0;
   }
 }
 
@@ -287,7 +291,6 @@ img {
 }
 
 .menu-container {
-  padding: 20px;
   text-align: center;
 }
 
