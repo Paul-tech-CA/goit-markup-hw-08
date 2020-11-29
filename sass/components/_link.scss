@@ -69,6 +69,8 @@
     position: relative;
 }
 
+
+
 .current::after{
     display: inline-block;
     position: absolute;
@@ -87,6 +89,10 @@
     //     // margin-left: auto;
     //     // margin-right: auto;
     // }
+}
+
+.portfolio .current::after{
+    bottom: -8px;
 }
 
 .site-nav .link.current {

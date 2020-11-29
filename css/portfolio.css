@@ -28,7 +28,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: tomato;
   }
 }
 
@@ -148,6 +147,10 @@ img {
   bottom: 0;
   background: #2196F3;
   border-radius: 2px;
+}
+
+.portfolio .current::after {
+  bottom: -8px;
 }
 
 .site-nav .link.current {
@@ -761,8 +764,25 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-losung {
+    text-align: center;
+  }
+  .form-footer {
+    margin: 0 auto;
+    display: block;
+  }
+  .form-field-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form-footer-sing {
+    display: flex;
+  }
+  .form-footer {
     display: flex;
   }
 }
@@ -792,6 +812,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .button-footer-form {
+    align-self: flex-end;
+  }
+}
+
 .form-field-footer input {
   width: 370px;
   height: 50px;
@@ -805,7 +831,7 @@ body {
 @media screen and (max-width: 1199px) {
   .form-field-footer input {
     width: 450px;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 }
 

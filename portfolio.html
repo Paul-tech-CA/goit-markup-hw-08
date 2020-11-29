@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My WebStudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -14,39 +14,56 @@
     <header class="page-header">
 
          <!--Навигация на другие страницы-->
-         <div class="container header-main">
-             <div class="navigation">
+            <div class="container header-main">
+                <div class="navigation">
                 <nav class="nav">
-            <a href="./index.html" class="logo">Web<span class="logo-studio-header">Studio</span> </a>
+                    <a href="./index.html" class="logo">Web<span class="logo-studio-header">Studio</span> </a>
+                    <button type="button" class="menu-button is-open"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button>
+                        <svg 
+                        width="40px" 
+                        height="40px"
+                        aria-label="Переключатель мобильного меню"
+                        >
+                            <use class="icon-close tel" href="./images/sprite.svg#icon-tel_close"></use>
+                            <use class="icon-menu tel" href="./images/sprite.svg#icon-tel_menu"></use>
+                        </svg>
+                    </button>
 
-            <ul class="site-nav list">
-                <li class="site-nav-link"><a href="./index.html" class="link header-link">Студия</a></li>
-                <li class="site-nav-link"><a href="./portfolio.html" class="link current header-link">Портфолио</a></li>
-                <li class="site-nav-link"><a href="" class="link header-link">Контакты</a></li>
-            </ul>
+                    <div class="menu-container" id="menu-container" data-menu>
+                        <div class="nav-list-header">
+                            <ul class="site-nav list">
+                                <li class="site-nav-link studio"><a href="./index.html" class="link header-link">Студия</a></li>
+                                <li class="site-nav-link portfolio"><a href="" class="link current header-link">Портфолио</a></li>
+                                <li class="site-nav-link contact"><a href="" class="link header-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-footer-contacts">
+                            <ul class="contacts list">
+                                <li class="footer-adress-contacts"><a href="mailto:info@devstudio.com" 
+                                    class="link mail-link">
+                                    <svg class="link-icon-envelope" width="16" height="12">
+                                        <use href="./images/sprite.svg#icon-envelope"></use>
+                                    </svg>info@devstudio.com</a>
+                                </li>
+                                <li class="footer-adress-contacts"><a href="tel:380961111111" 
+                                    class="link mail-link">
+                                    <svg class="link-icon-phone" width="10" height="16">
+                                         <use href="./images/sprite.svg#icon-phone"></use>
+                                    </svg>+38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </nav>
-             </div>
-             <div class="header-footer-contacts">
-                <ul class="contacts list">
-                    <li class="footer-adress-contacts"><a href="mailto:info@devstudio.com" 
-                        class="link mail-link">
-                        <svg class="link-icon-envelope" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="footer-adress-contacts"><a href="tel:380961111111" 
-                        class="link mail-link">
-                        <svg class="link-icon-phone" width="10" height="16">
-                             <use href="./images/sprite.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
-         </div>
-        
-        
 
+                </div>  
+            </div>
+
+            
     </header>
 
     <main>
@@ -454,28 +471,31 @@
                  </li>
                  </ul>
              </div>
-             <form class="form-footer">
-                <b class="footer-losung">подпишитесь на рассылку</b>
-                <div class="form-footer-sing">
-                     <div class="form-field-footer">
-                        <label for="mail" class="form-label">                            
-                        </label>
-                        <input type="email" class="form-input-footer"
-                        name="mail" id="mail" placeholder="E-mail">
-                    </div>
-                    <button type="submit" class="button-footer-form">Подписаться
-                        <svg class="icon-footer-send" width="22" height="22">
-                            <use href="./images/sprite.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
+            <form class="form-footer">
+  
+                <div class="form-field-footer">
+                        <b class="footer-losung">подпишитесь на рассылку</b>
+                        <div class="form-footer-sing">
+                            <label for="mail" class="form-label">                            
+                            </label>
+                            <input type="email" class="form-input-footer"
+                                    name="mail" id="mail" placeholder="E-mail">
+                        
+                            <button type="submit" class="button-footer-form">Подписаться
+                                <svg class="icon-footer-send" width="22" height="22">
+                                    <use href="./images/sprite.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
                 </div>
-               
-
+                 
             </form>
              
          </div>    
      </footer>
-         
 
+         
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
