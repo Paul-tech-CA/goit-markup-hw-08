@@ -28,6 +28,7 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    background-color: tomato;
   }
 }
 
@@ -1053,24 +1054,23 @@ img {
   }
 }
 
-.form-container {
-  width: 448px;
-  min-height: 342px;
+.form {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 10px; */
-  /* border: 1px solid; */
+  padding: 10px;
+  border: 1px solid;
 }
 
 @media screen and (min-width: 480px) {
-  .form-container {
+  .form {
     width: 450px;
     height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .form-container {
+  .form {
     width: 528px;
     height: 581px;
   }
@@ -1096,8 +1096,8 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   box-sizing: border-box;
-  border-radius: 4px;
   margin: 0 0 10px 0;
   position: relative;
 }
