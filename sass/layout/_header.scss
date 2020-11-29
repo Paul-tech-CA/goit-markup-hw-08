@@ -5,6 +5,102 @@
 //     // margin: 0;
 // }
 
+<<<<<<< HEAD
+
+.menu-container{
+   
+    padding: 20px;
+    text-align: center;
+        
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background:$background-color-header;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+                    0px 2px 4px rgba(0, 0, 0, 0.08), 
+                    0px 1px 3px rgba(0, 0, 0, 0.16); 
+        &.is-open{
+        display: block;
+        }
+    }
+
+   
+        
+}
+
+=======
+>>>>>>> 0fb110b9edf70fbafaf97ba381e06a5c8b501ff2
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .header-link{
+        font-size: 18px;
+        line-height: 1.166;
+    }
+    .mail-link{
+        font-size: 18px;
+        line-height: 1.166;
+    }
+}
+
+<<<<<<< HEAD
+@media screen and (min-width: 768px) and (max-width: 1199px){
+
+        .menu-container{
+            padding: 35px 0;
+            display: flex;
+                    
+    }
+
+    .link-icon-envelope, .link-icon-phone{
+        margin-right: 8px;
+        padding: 0;        
+    }
+    .contacts li:not(:last-child){
+        margin-bottom: 10px;
+    }
+       
+    .studio .current::after{
+        bottom: -8px;
+    }
+    .portfolio .current::after{
+        bottom: -8px;
+    }
+    .site-nav{
+        margin-right: 84px;
+    }
+
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1600px){
+
+    .contacts{
+        display: flex;
+    }
+
+    .contacts li:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .menu-container{
+        padding: 35px 0;
+        display: flex;                
+    }
+
+    .link-icon-envelope, .link-icon-phone{
+        margin-right: 8px;
+    }
+
+    .nav-list-header{
+        margin-right: 305px;
+    }
+
+}
+
+=======
+>>>>>>> 0fb110b9edf70fbafaf97ba381e06a5c8b501ff2
 .menu-button{
     padding: 0;
     border: none;
@@ -35,6 +131,8 @@
 }
 
 
+<<<<<<< HEAD
+=======
 .menu-container{
    
     padding: 20px;
@@ -43,6 +141,7 @@
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
+        z-index: 1;
         top: 100%;
         left: 0;
         width: 100%;
@@ -61,11 +160,12 @@
         flex-grow: 1;        
     }
 }
+>>>>>>> 0fb110b9edf70fbafaf97ba381e06a5c8b501ff2
 
 
 .page-header {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.333;
     letter-spacing: 0.02em;
     
@@ -88,6 +188,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // border: 1px solid #ECECEC;
 }
 
 .site-nav {
@@ -171,4 +272,3 @@
 
     
 }
-
