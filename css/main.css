@@ -228,7 +228,7 @@ img {
     bottom: -8px;
   }
   .site-nav {
-    margin-right: 84px;
+    margin-left: 60px;
   }
 }
 
@@ -247,7 +247,13 @@ img {
     margin-right: 8px;
   }
   .nav-list-header {
-    margin-right: 305px;
+    margin-left: 93px;
+  }
+  .studio .current::after {
+    bottom: -37px;
+  }
+  .portfolio .current::after {
+    bottom: -37px;
   }
 }
 
@@ -280,10 +286,39 @@ img {
   display: none;
 }
 
+.menu-container {
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
 .page-header {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.333;
+  line-height: 1.142;
   letter-spacing: 0.02em;
   position: relative;
 }
