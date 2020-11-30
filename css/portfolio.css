@@ -437,9 +437,6 @@ img {
     text-align: center;
     margin: 0;
   }
-  .form-footer-sing {
-    display: inline-block;
-  }
   .form-footer {
     text-align: center;
   }
@@ -541,7 +538,7 @@ img {
 .footer-losung {
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
@@ -918,9 +915,15 @@ body {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 480px) {
+  .form-field-footer input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .form-field-footer input {
-    width: 450px;
+    max-width: 450px;
     margin: 20px 0;
   }
 }

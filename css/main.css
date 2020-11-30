@@ -448,7 +448,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-bacground-picture {
-    max-width: 768px;
+    width: 100%;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header_tablet.jpg");
   }
 }
@@ -476,19 +476,13 @@ img {
 .hero-section {
   padding-top: 118px;
   padding-bottom: 198px;
+  width: 100%;
 }
 
 @media (min-width: 480px) {
   .hero-section {
-    max-width: 480px;
     padding-top: 118px;
     padding-bottom: 198px;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    max-width: 768px;
   }
 }
 
@@ -535,9 +529,6 @@ img {
   .footer-center {
     text-align: center;
     margin: 0;
-  }
-  .form-footer-sing {
-    display: inline-block;
   }
   .form-footer {
     text-align: center;
@@ -640,7 +631,7 @@ img {
 .footer-losung {
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
@@ -760,9 +751,15 @@ img {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 480px) {
+  .form-field-footer input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .form-field-footer input {
-    width: 450px;
+    max-width: 450px;
     margin: 20px 0;
   }
 }
@@ -842,7 +839,12 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-list {
+    text-align: center;
+  }
 }
 
 .pictures-svg {

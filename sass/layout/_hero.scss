@@ -62,7 +62,7 @@
 
     @media screen and (min-width: 768px) {
         .hero-bacground-picture{
-            max-width: 768px;
+            width: 100%;
             background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -136,16 +136,17 @@
 
 .hero-section{
     padding-top: 118px;
-    padding-bottom: 198px;    
+    padding-bottom: 198px;  
+    width: 100%;  
     
     @media (min-width: 480px) {
-    max-width: 480px;
+    // max-width: 480px;
     padding-top: 118px;
     padding-bottom: 198px;
     }
 
     @media (min-width: 768px) {
-        max-width: 768px;   
+        // max-width: 768px;   
     }
 
     @media (min-width: 1200px) {
